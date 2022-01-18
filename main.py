@@ -1,11 +1,10 @@
 def same(a1, a2):
-    a2copy = a2
     if len(a1) != len(a2): return False
     else:
         for i in range(len(a1)):
-            if not contains(a2copy, a1[i]*a1[i]):
+            if not contains(a2, a1[i]*a1[i]):
                 return False
-            a2copy.remove(a1[i]*a1[i])
+            a2.remove(a1[i]*a1[i])
         return True
 
 def contains(niz, n):
@@ -30,7 +29,7 @@ def cammel(str):
     rez=rez[:-1]
     return rez
 
-print(same([1,2,3],[1,9]))
+print(same([1,2,3],[1,9, 9]))
 
 print(countUniqueValues([1, 2, 1, 2, 2, 4, 4]))
 
