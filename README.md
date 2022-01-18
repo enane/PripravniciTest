@@ -1,0 +1,2 @@
+# PripravniciTest
+Par zadačića
