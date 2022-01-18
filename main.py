@@ -12,6 +12,7 @@ def contains(niz, n):
         if niz[i] == n: return True
     return False
 
+
 def countUniqueValues(niz):
     b = list(set(niz))
     return len(b)
